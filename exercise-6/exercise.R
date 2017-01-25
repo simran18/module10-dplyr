@@ -2,8 +2,7 @@
 
 # Install the nycflights13 package and read it in. Require the dplyr package.
 # install.packages("nycflights13")
-library(nycflights13)
-library(dplyr)
+
 
 
 # Create a dataframe of the average arrival delay for each destination, then use left_join
@@ -12,7 +11,6 @@ library(dplyr)
 
 # Create a dataframe of the average arrival delay for each airline, then use left_join
 # to join on the "airlines" dataframe, which has the airline info
-
 
 
 ### Bonus ###
