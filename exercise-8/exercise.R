@@ -28,13 +28,14 @@ swiss.data <- mutate(swiss.data, Mortality.Difference = mean(Infant.Mortality) -
 
 # Create a new data frame that only is that of regions that have a Infant mortality rate less than the
 # mean.  Have this data frame only have the regions name, education and mortality rate.
-better.than.mean <- swiss.data %>% filter(Mortality.Difference > 0) %>% 
-  select(Region, Education, Infant.Mortality)
+better.than.mean <- swiss.data %>% 
+                    filter(Mortality.Difference > 0) %>% 
+                    select(Region, Education, Infant.Mortality)
 
 
 #Filter one of the columns based on a question that you may have (which regions have a higher
 #education rate, etc.) and write that to a csv file
-swiss.data %>% fiter(Agriculture > 50) %>% 
+swiss.data %>% filter(Agriculture > 50) %>% 
   select(Region, Agriculture) %>% 
   write.csv("data/agriculture-50.csv")
 
