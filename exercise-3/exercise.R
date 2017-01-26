@@ -9,16 +9,11 @@ library("dplyr")
 install.packages('devtools')
 
 # Install "fueleconomy" package from GitHub
-devtools::install_github("hadley/fueleconomy")
-
-# Require/library the fueleconomy package
 library(fueleconomy)
-<<<<<<< HEAD
-=======
+# Require/library the fueleconomy package
 
 # You should have have access to the vehicles data.frame
 
->>>>>>> info201-w17/master
 
 # Which Accura model has the best hwy MPG in 2015? (without method chaining)
 acura <- filter(vehicle, make == 'Acura', year == 2015)
@@ -42,7 +37,6 @@ best.model <- filter(vehicles, make == 'Acura', year == 2015) %>%
 # Test how long it takes to perform each one 1000 times
 
 # Without chaining
-<<<<<<< HEAD
 WithoutChaining <- function() {
   acuras <- filter(vehicles, make == 'Acura', year == 2015)
   best.acura <- filter(acuras, hwy == max(hwy))
@@ -64,15 +58,3 @@ NestedModel <- fuction() {
     ) , model
   )
 }
-
-=======
-
-
-# Nested functions
-
-
-# Pipe operator
-
-
-# Pretty similar...
->>>>>>> info201-w17/master

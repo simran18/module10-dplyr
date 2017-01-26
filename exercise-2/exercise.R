@@ -9,7 +9,6 @@ library("dplyr")
 library(fueleconomy)
 
 # You should have have access to the `vehicles` data.frame
-<<<<<<< HEAD
 View(vehicles)
 
 # Create a data.frame of vehicles from 1997
@@ -35,7 +34,7 @@ MakeYearFilter <- function(user.make, user.year) {
 
 # What was the most efficient honda model of 1995?
 MakeYearFilter(Honda, 1995)
-=======
+
 # Use `as.data.frame()` to make it into a normal data frame
 
 
@@ -72,4 +71,4 @@ MakeYearFilter(Honda, 1995)
 
 
 # What was the most efficient honda model of 1995?
->>>>>>> info201-w17/master
+

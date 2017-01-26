@@ -4,9 +4,6 @@
 install.packages('devtools')
 
 # Install "fueleconomy" package from GitHub
-devtools::install_github("hadley/fueleconomy")
-
-<<<<<<< HEAD
 # Require/library the fueleconomy package
 library(fueleconomy)
 
@@ -35,7 +32,7 @@ YearMakeVehicleFilter <- function(user.year, user.make) {
 
 # What was the most efficient honda model of 1995?
 YearMakeVehicleFilter(1995, 'Honda')
-=======
+
 # Require/library the "fueleconomy" package
 library(fueleconomy)
 
@@ -74,7 +71,7 @@ library(fueleconomy)
 # Write a function that takes a `year` and a `make` as parameters,
 # and returns the vehicle that gets the most hwy miles/gallon of vehicles of that make in that year
 # You'll need to filter more!
->>>>>>> info201-w17/master
+
 
 
 # What was the most efficient honda model of 1995?
